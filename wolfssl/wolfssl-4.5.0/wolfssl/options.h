@@ -68,12 +68,6 @@ extern "C" {
 #undef  WOLFSSL_IPV6
 #define WOLFSSL_IPV6
 
-#undef  PERSIST_SESSION_CACHE
-#define PERSIST_SESSION_CACHE
-
-#undef  PERSIST_CERT_CACHE
-#define PERSIST_CERT_CACHE
-
 #undef  HAVE_AESGCM
 #define HAVE_AESGCM
 
@@ -82,9 +76,6 @@ extern "C" {
 
 #undef  WOLFSSL_SHA384
 #define WOLFSSL_SHA384
-
-#undef  SESSION_CERTS
-#define SESSION_CERTS
 
 #undef  HAVE_HKDF
 #define HAVE_HKDF
