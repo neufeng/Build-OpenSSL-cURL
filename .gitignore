@@ -29,6 +29,11 @@ wolfssl/wolfssl-4.5.0/src/.libs
 wolfssl/wolfssl-4.5.0/src/*.o
 wolfssl/wolfssl-4.5.0/src/*.lo
 wolfssl/wolfssl-4.5.0/src/*.la
+wolfssl/wolfssl-4.5.0/wolfcrypt/src/.deps
+wolfssl/wolfssl-4.5.0/wolfcrypt/src/.dirstamp
+wolfssl/wolfssl-4.5.0/wolfcrypt/src/*.o
+wolfssl/wolfssl-4.5.0/wolfcrypt/src/*.lo
+wolfssl/wolfssl-4.5.0/wolfcrypt/src/*.la
 wolfssl/wolfssl-4.5.0/tests/.deps
 wolfssl/wolfssl-4.5.0/tests/.dirstamp
 wolfssl/wolfssl-4.5.0/tests/.libs
