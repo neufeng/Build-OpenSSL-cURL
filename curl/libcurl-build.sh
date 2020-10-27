@@ -33,7 +33,7 @@ alertdim="\033[0m${red}\033[2m"
 # set trap to help debug any build errors
 trap 'echo -e "${alert}** ERROR with Build - Check /tmp/curl*.log${alertdim}"; tail -3 /tmp/curl*.log' INT TERM EXIT
 
-CURL_VERSION="curl-7.71.1"
+CURL_VERSION="curl-7.72.0"
 IOS_SDK_VERSION=""
 IOS_MIN_SDK_VERSION="7.1"
 TVOS_SDK_VERSION=""
@@ -295,7 +295,7 @@ mkdir -p include/curl/
 rm -rf "/tmp/${CURL_VERSION}-*"
 rm -rf "/tmp/${CURL_VERSION}-*.log"
 
-rm -rf "${CURL_VERSION}"
+#rm -rf "${CURL_VERSION}"
 
 if [ ! -e ${CURL_VERSION}.tar.gz ]; then
 	echo "Downloading ${CURL_VERSION}.tar.gz"
@@ -304,8 +304,10 @@ else
 	echo "Using ${CURL_VERSION}.tar.gz"
 fi
 
-echo "Unpacking curl"
-tar xfz "${CURL_VERSION}.tar.gz"
+if [ ! -d ${CURL_VERSION} ]; then
+	echo "Unpacking curl"
+	tar xfz "${CURL_VERSION}.tar.gz"
+fi
 
 echo -e "${bold}Building Mac libraries${dim}"
 buildMac "x86_64"
@@ -388,7 +390,7 @@ lipo \
 
 echo -e "${bold}Cleaning up${dim}"
 rm -rf /tmp/${CURL_VERSION}-*
-rm -rf ${CURL_VERSION}
+#rm -rf ${CURL_VERSION}
 
 echo "Checking libraries"
 xcrun -sdk iphoneos lipo -info lib/*.a
