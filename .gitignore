@@ -21,6 +21,13 @@ openssl
 !openssl/*.tar.gz
 
 #wolfssl
+.deps
+.dirstamp
+.libs
+*.o
+*.lo
+*.la
+
 wolfssl/iOS*
 wolfssl/output
 wolfssl/wolfssl-4.5.0/src/.deps
@@ -33,6 +40,7 @@ wolfssl/wolfssl-4.5.0/src/*.la
 wolfssl/wolfssl-4.5.0/wolfcrypt/benchmark/.deps
 wolfssl/wolfssl-4.5.0/wolfcrypt/benchmark/.libs
 wolfssl/wolfssl-4.5.0/wolfcrypt/benchmark/.dirstamp
+wolfssl/wolfssl-4.5.0/wolfcrypt/benchmark/*.o
 wolfssl/wolfssl-4.5.0/wolfcrypt/src/.deps
 wolfssl/wolfssl-4.5.0/wolfcrypt/src/.dirstamp
 wolfssl/wolfssl-4.5.0/wolfcrypt/src/*.o
@@ -51,3 +59,6 @@ wolfssl/wolfssl-4.5.0/testsuite/.deps
 wolfssl/wolfssl-4.5.0/testsuite/.dirstamp
 wolfssl/wolfssl-4.5.0/testsuite/.libs
 wolfssl/wolfssl-4.5.0/testsuite/*.o
+
+#examples
+wolfssl/wolfssl-4.5.0/examples
