@@ -23,3 +23,17 @@ openssl
 #wolfssl
 wolfssl/iOS*
 wolfssl/output
+wolfssl/wolfssl-4.5.0/src/.deps
+wolfssl/wolfssl-4.5.0/src/.dirstamp
+wolfssl/wolfssl-4.5.0/src/.libs
+wolfssl/wolfssl-4.5.0/src/*.o
+wolfssl/wolfssl-4.5.0/src/*.lo
+wolfssl/wolfssl-4.5.0/src/*.la
+wolfssl/wolfssl-4.5.0/tests/.deps
+wolfssl/wolfssl-4.5.0/tests/.dirstamp
+wolfssl/wolfssl-4.5.0/tests/.libs
+wolfssl/wolfssl-4.5.0/tests/*.o
+wolfssl/wolfssl-4.5.0/testsuite/.deps
+wolfssl/wolfssl-4.5.0/testsuite/.dirstamp
+wolfssl/wolfssl-4.5.0/testsuite/.libs
+wolfssl/wolfssl-4.5.0/testsuite/*.o
