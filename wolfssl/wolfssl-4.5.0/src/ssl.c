@@ -12878,9 +12878,6 @@ static int GetDeepCopySession(WOLFSSL* ssl, WOLFSSL_SESSION* copyFrom)
          * and is not pointing to buff of session copied from */
         copyInto->ticket = copyInto->staticTicket;
     }
-    /* fix resume session */
-    ssl->options.haveSessionId = 1;
-    XMEMCPY(ssl->arrays->sessionID, copyFrom->sessionID, ID_LEN);
 
     if (doDynamicCopy) {
         if (wc_UnLockMutex(&session_mutex) != 0) {

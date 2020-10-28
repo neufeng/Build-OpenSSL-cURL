@@ -20058,7 +20058,7 @@ exit_dpk:
                 return ret;
             }
 
-            idSz = 0;
+            // idSz = 0;
         }
 #endif
         length = VERSION_SZ + RAN_LEN
@@ -24415,8 +24415,12 @@ int SetTicket(WOLFSSL* ssl, const byte* ticket, word32 length)
         }
         else
 #endif
+        {
             XMEMCPY(ssl->arrays->sessionID,
                                  ssl->session.ticket + length - ID_LEN, ID_LEN);
+            // fix session id size
+            ssl->arrays->sessionIDSz = ID_LEN;
+        }
     }
 
     return 0;
