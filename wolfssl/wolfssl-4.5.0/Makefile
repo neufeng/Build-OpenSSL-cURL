@@ -674,30 +674,30 @@ am__append_127 =  \
 #am__append_134 = wolfcrypt/src/port/intel/quickassist_sync.c
 #am__append_135 = wolfcrypt/src/port/atmel/atmel.c
 #am__append_136 = wolfcrypt/test/testwolfcrypt
-am__append_137 = examples/benchmark/tls_bench
-am__append_138 = examples/benchmark/tls_bench.h
-am__append_139 = examples/client/client \
-	examples/echoclient/echoclient
-am__append_140 = examples/client/client.h \
-	examples/echoclient/echoclient.h
-am__append_141 =  \
-	examples/echoserver/echoserver \
-	examples/server/server
-am__append_142 =  \
-	examples/echoserver/echoserver.h \
-	examples/server/server.h
-#am__append_143 = \
-#				examples/sctp/sctp-server \
-#				examples/sctp/sctp-server-dtls
+#am__append_137 = examples/benchmark/tls_bench
+#am__append_138 = examples/benchmark/tls_bench.h
+#am__append_139 = examples/client/client \
+#	examples/echoclient/echoclient
+#am__append_140 = examples/client/client.h \
+#	examples/echoclient/echoclient.h
+#am__append_141 =  \
+#	examples/echoserver/echoserver \
+#	examples/server/server
+#am__append_142 =  \
+#	examples/echoserver/echoserver.h \
+#	examples/server/server.h
+##am__append_143 = \
+##				examples/sctp/sctp-server \
+##				examples/sctp/sctp-server-dtls
 
-#am__append_144 = \
-#				examples/sctp/sctp-client \
-#				examples/sctp/sctp-client-dtls
+##am__append_144 = \
+##				examples/sctp/sctp-client \
+##				examples/sctp/sctp-client-dtls
 
-am__append_145 = testsuite/testsuite.test \
-	tests/unit.test
-am__append_146 = testsuite/testsuite.test \
-	tests/unit.test
+#am__append_145 = testsuite/testsuite.test \
+#	tests/unit.test
+#am__append_146 = testsuite/testsuite.test \
+#	tests/unit.test
 #am__append_147 = sslSniffer/sslSnifferTest/snifftest
 am__append_148 = mqx/util_lib/.cproject \
 	mqx/util_lib/.project \
@@ -1061,25 +1061,25 @@ am__append_148 = mqx/util_lib/.cproject \
 #am__append_150 = mcapi/test 
 am__append_151 = mcapi/crypto.h
 #am__append_152 = scripts/sniffer-testsuite.test
-am__append_153 = scripts/resume.test
-am__append_154 = scripts/benchmark.test \
-	scripts/memtest.sh
+#am__append_153 = scripts/resume.test
+#am__append_154 = scripts/benchmark.test \
+#	scripts/memtest.sh
 
 # The CRL and OCSP tests use RSA certificates.
 
 # make revoked test rely on completion of resume test
-#am__append_155 = scripts/crl-revoked.test
-#am__append_156 = scripts/ocsp-stapling.test \
-#	scripts/ocsp-stapling-with-ca-as-responder.test
-#am__append_157 = scripts/ocsp-stapling2.test
-#am__append_158 = scripts/psk.test
-#am__append_159 = scripts/trusted_peer.test
-#am__append_160 = scripts/pkcallbacks.test
-am__append_161 = scripts/tls13.test
-#am__append_162 = scripts/external.test \
-#	scripts/google.test \
-#	scripts/openssl.test
-##am__append_163 = scripts/ocsp.test
+##am__append_155 = scripts/crl-revoked.test
+##am__append_156 = scripts/ocsp-stapling.test \
+##	scripts/ocsp-stapling-with-ca-as-responder.test
+##am__append_157 = scripts/ocsp-stapling2.test
+##am__append_158 = scripts/psk.test
+##am__append_159 = scripts/trusted_peer.test
+##am__append_160 = scripts/pkcallbacks.test
+#am__append_161 = scripts/tls13.test
+##am__append_162 = scripts/external.test \
+##	scripts/google.test \
+##	scripts/openssl.test
+###am__append_163 = scripts/ocsp.test
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/ax_add_am_macro.m4 \
@@ -1123,23 +1123,23 @@ am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(libdir)" \
 	"$(DESTDIR)$(ippdir)" "$(DESTDIR)$(pkgconfigdir)" \
 	"$(DESTDIR)$(includedir)" "$(DESTDIR)$(includedir)"
 #am__EXEEXT_1 = wolfcrypt/test/testwolfcrypt$(EXEEXT)
-am__EXEEXT_2 = testsuite/testsuite.test$(EXEEXT) \
-	tests/unit.test$(EXEEXT)
+#am__EXEEXT_2 = testsuite/testsuite.test$(EXEEXT) \
+#	tests/unit.test$(EXEEXT)
 #am__EXEEXT_3 =  \
 #	mcapi/test$(EXEEXT)
 am__EXEEXT_4 = wolfcrypt/benchmark/benchmark$(EXEEXT) \
 	wolfcrypt/test/testwolfcrypt$(EXEEXT) \
 	wolfcrypt/test/testwolfcrypt$(EXEEXT)
-am__EXEEXT_5 = examples/benchmark/tls_bench$(EXEEXT)
-am__EXEEXT_6 =  \
-	examples/client/client$(EXEEXT) \
-	examples/echoclient/echoclient$(EXEEXT)
-am__EXEEXT_7 = examples/echoserver/echoserver$(EXEEXT) \
-	examples/server/server$(EXEEXT)
-#am__EXEEXT_8 = examples/sctp/sctp-server$(EXEEXT) \
-#	examples/sctp/sctp-server-dtls$(EXEEXT)
-#am__EXEEXT_9 = examples/sctp/sctp-client$(EXEEXT) \
-#	examples/sctp/sctp-client-dtls$(EXEEXT)
+#am__EXEEXT_5 = examples/benchmark/tls_bench$(EXEEXT)
+#am__EXEEXT_6 =  \
+#	examples/client/client$(EXEEXT) \
+#	examples/echoclient/echoclient$(EXEEXT)
+#am__EXEEXT_7 = examples/echoserver/echoserver$(EXEEXT) \
+#	examples/server/server$(EXEEXT)
+##am__EXEEXT_8 = examples/sctp/sctp-server$(EXEEXT) \
+##	examples/sctp/sctp-server-dtls$(EXEEXT)
+##am__EXEEXT_9 = examples/sctp/sctp-client$(EXEEXT) \
+##	examples/sctp/sctp-client-dtls$(EXEEXT)
 #am__EXEEXT_10 = sslSniffer/sslSnifferTest/snifftest$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS) $(noinst_PROGRAMS)
 am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
@@ -1444,48 +1444,48 @@ src_libwolfssl_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(src_libwolfssl_la_LDFLAGS) $(LDFLAGS) -o $@
 am__examples_benchmark_tls_bench_SOURCES_DIST =  \
 	examples/benchmark/tls_bench.c
-am_examples_benchmark_tls_bench_OBJECTS = examples/benchmark/tls_bench.$(OBJEXT)
+#am_examples_benchmark_tls_bench_OBJECTS = examples/benchmark/tls_bench.$(OBJEXT)
 examples_benchmark_tls_bench_OBJECTS =  \
 	$(am_examples_benchmark_tls_bench_OBJECTS)
 am__examples_client_client_SOURCES_DIST = examples/client/client.c
-am_examples_client_client_OBJECTS =  \
-	examples/client/client.$(OBJEXT)
+#am_examples_client_client_OBJECTS =  \
+#	examples/client/client.$(OBJEXT)
 examples_client_client_OBJECTS = $(am_examples_client_client_OBJECTS)
 am__examples_echoclient_echoclient_SOURCES_DIST =  \
 	examples/echoclient/echoclient.c
-am_examples_echoclient_echoclient_OBJECTS = examples/echoclient/echoclient.$(OBJEXT)
+#am_examples_echoclient_echoclient_OBJECTS = examples/echoclient/echoclient.$(OBJEXT)
 examples_echoclient_echoclient_OBJECTS =  \
 	$(am_examples_echoclient_echoclient_OBJECTS)
 am__examples_echoserver_echoserver_SOURCES_DIST =  \
 	examples/echoserver/echoserver.c
-am_examples_echoserver_echoserver_OBJECTS = examples/echoserver/echoserver.$(OBJEXT)
+#am_examples_echoserver_echoserver_OBJECTS = examples/echoserver/echoserver.$(OBJEXT)
 examples_echoserver_echoserver_OBJECTS =  \
 	$(am_examples_echoserver_echoserver_OBJECTS)
 am__examples_sctp_sctp_client_SOURCES_DIST =  \
 	examples/sctp/sctp-client.c
-#am_examples_sctp_sctp_client_OBJECTS = examples/sctp/sctp-client.$(OBJEXT)
+##am_examples_sctp_sctp_client_OBJECTS = examples/sctp/sctp-client.$(OBJEXT)
 examples_sctp_sctp_client_OBJECTS =  \
 	$(am_examples_sctp_sctp_client_OBJECTS)
-#examples_sctp_sctp_client_DEPENDENCIES = $(am__DEPENDENCIES_1)
+##examples_sctp_sctp_client_DEPENDENCIES = $(am__DEPENDENCIES_1)
 am__examples_sctp_sctp_client_dtls_SOURCES_DIST =  \
 	examples/sctp/sctp-client-dtls.c
-#am_examples_sctp_sctp_client_dtls_OBJECTS = examples/sctp/sctp-client-dtls.$(OBJEXT)
+##am_examples_sctp_sctp_client_dtls_OBJECTS = examples/sctp/sctp-client-dtls.$(OBJEXT)
 examples_sctp_sctp_client_dtls_OBJECTS =  \
 	$(am_examples_sctp_sctp_client_dtls_OBJECTS)
 am__examples_sctp_sctp_server_SOURCES_DIST =  \
 	examples/sctp/sctp-server.c
-#am_examples_sctp_sctp_server_OBJECTS = examples/sctp/sctp-server.$(OBJEXT)
+##am_examples_sctp_sctp_server_OBJECTS = examples/sctp/sctp-server.$(OBJEXT)
 examples_sctp_sctp_server_OBJECTS =  \
 	$(am_examples_sctp_sctp_server_OBJECTS)
-#examples_sctp_sctp_server_DEPENDENCIES = $(am__DEPENDENCIES_1)
+##examples_sctp_sctp_server_DEPENDENCIES = $(am__DEPENDENCIES_1)
 am__examples_sctp_sctp_server_dtls_SOURCES_DIST =  \
 	examples/sctp/sctp-server-dtls.c
-#am_examples_sctp_sctp_server_dtls_OBJECTS = examples/sctp/sctp-server-dtls.$(OBJEXT)
+##am_examples_sctp_sctp_server_dtls_OBJECTS = examples/sctp/sctp-server-dtls.$(OBJEXT)
 examples_sctp_sctp_server_dtls_OBJECTS =  \
 	$(am_examples_sctp_sctp_server_dtls_OBJECTS)
 am__examples_server_server_SOURCES_DIST = examples/server/server.c
-am_examples_server_server_OBJECTS =  \
-	examples/server/server.$(OBJEXT)
+#am_examples_server_server_OBJECTS =  \
+#	examples/server/server.$(OBJEXT)
 examples_server_server_OBJECTS = $(am_examples_server_server_OBJECTS)
 am__mcapi_test_SOURCES_DIST = mcapi/crypto.c mcapi/mcapi_test.c
 #am_mcapi_test_OBJECTS =  \
@@ -1500,14 +1500,14 @@ sslSniffer_sslSnifferTest_snifftest_OBJECTS =  \
 am__tests_unit_test_SOURCES_DIST = tests/unit.c tests/api.c \
 	tests/suites.c tests/hash.c tests/srp.c \
 	examples/client/client.c examples/server/server.c
-am_tests_unit_test_OBJECTS =  \
-	tests/unit_test-unit.$(OBJEXT) \
-	tests/unit_test-api.$(OBJEXT) \
-	tests/unit_test-suites.$(OBJEXT) \
-	tests/unit_test-hash.$(OBJEXT) \
-	tests/unit_test-srp.$(OBJEXT) \
-	examples/client/tests_unit_test-client.$(OBJEXT) \
-	examples/server/tests_unit_test-server.$(OBJEXT)
+#am_tests_unit_test_OBJECTS =  \
+#	tests/unit_test-unit.$(OBJEXT) \
+#	tests/unit_test-api.$(OBJEXT) \
+#	tests/unit_test-suites.$(OBJEXT) \
+#	tests/unit_test-hash.$(OBJEXT) \
+#	tests/unit_test-srp.$(OBJEXT) \
+#	examples/client/tests_unit_test-client.$(OBJEXT) \
+#	examples/server/tests_unit_test-server.$(OBJEXT)
 tests_unit_test_OBJECTS = $(am_tests_unit_test_OBJECTS)
 tests_unit_test_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
@@ -1517,12 +1517,12 @@ am__testsuite_testsuite_test_SOURCES_DIST = wolfcrypt/test/test.c \
 	examples/client/client.c examples/echoclient/echoclient.c \
 	examples/echoserver/echoserver.c examples/server/server.c \
 	testsuite/testsuite.c
-am_testsuite_testsuite_test_OBJECTS = wolfcrypt/test/testsuite_testsuite_test-test.$(OBJEXT) \
-	examples/client/testsuite_testsuite_test-client.$(OBJEXT) \
-	examples/echoclient/testsuite_testsuite_test-echoclient.$(OBJEXT) \
-	examples/echoserver/testsuite_testsuite_test-echoserver.$(OBJEXT) \
-	examples/server/testsuite_testsuite_test-server.$(OBJEXT) \
-	testsuite/testsuite_test-testsuite.$(OBJEXT)
+#am_testsuite_testsuite_test_OBJECTS = wolfcrypt/test/testsuite_testsuite_test-test.$(OBJEXT) \
+#	examples/client/testsuite_testsuite_test-client.$(OBJEXT) \
+#	examples/echoclient/testsuite_testsuite_test-echoclient.$(OBJEXT) \
+#	examples/echoserver/testsuite_testsuite_test-echoserver.$(OBJEXT) \
+#	examples/server/testsuite_testsuite_test-server.$(OBJEXT) \
+#	testsuite/testsuite_test-testsuite.$(OBJEXT)
 testsuite_testsuite_test_OBJECTS =  \
 	$(am_testsuite_testsuite_test_OBJECTS)
 testsuite_testsuite_test_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
@@ -3227,54 +3227,54 @@ wolfcrypt_benchmark_benchmark_DEPENDENCIES = src/libwolfssl.la
 wolfcrypt_test_testwolfcrypt_SOURCES = wolfcrypt/test/test.c
 wolfcrypt_test_testwolfcrypt_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
 wolfcrypt_test_testwolfcrypt_DEPENDENCIES = src/libwolfssl.la
-examples_benchmark_tls_bench_SOURCES = examples/benchmark/tls_bench.c
-examples_benchmark_tls_bench_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
-examples_benchmark_tls_bench_DEPENDENCIES = src/libwolfssl.la
-examples_client_client_SOURCES = examples/client/client.c
-examples_client_client_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
-examples_client_client_DEPENDENCIES = src/libwolfssl.la
-examples_echoclient_echoclient_SOURCES = examples/echoclient/echoclient.c
-examples_echoclient_echoclient_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
-examples_echoclient_echoclient_DEPENDENCIES = src/libwolfssl.la
-examples_echoserver_echoserver_SOURCES = examples/echoserver/echoserver.c
-examples_echoserver_echoserver_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
-examples_echoserver_echoserver_DEPENDENCIES = src/libwolfssl.la
-examples_server_server_SOURCES = examples/server/server.c
-examples_server_server_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
-examples_server_server_DEPENDENCIES = src/libwolfssl.la
-#examples_sctp_sctp_server_SOURCES = examples/sctp/sctp-server.c
-#examples_sctp_sctp_server_LDADD = $(LIB_STATIC_ADD)
-#examples_sctp_sctp_server_dtls_SOURCES = examples/sctp/sctp-server-dtls.c
-#examples_sctp_sctp_server_dtls_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
-#examples_sctp_sctp_server_dtls_DEPENDENCIES = src/libwolfssl.la
-#examples_sctp_sctp_client_SOURCES = examples/sctp/sctp-client.c
-#examples_sctp_sctp_client_LDADD = $(LIB_STATIC_ADD)
-#examples_sctp_sctp_client_dtls_SOURCES = examples/sctp/sctp-client-dtls.c
-#examples_sctp_sctp_client_dtls_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
-#examples_sctp_sctp_client_dtls_DEPENDENCIES = src/libwolfssl.la
-testsuite_testsuite_test_SOURCES = \
-			      wolfcrypt/test/test.c \
-			      examples/client/client.c \
-			      examples/echoclient/echoclient.c \
-			      examples/echoserver/echoserver.c \
-			      examples/server/server.c \
-			      testsuite/testsuite.c
+#examples_benchmark_tls_bench_SOURCES = examples/benchmark/tls_bench.c
+#examples_benchmark_tls_bench_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
+#examples_benchmark_tls_bench_DEPENDENCIES = src/libwolfssl.la
+#examples_client_client_SOURCES = examples/client/client.c
+#examples_client_client_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
+#examples_client_client_DEPENDENCIES = src/libwolfssl.la
+#examples_echoclient_echoclient_SOURCES = examples/echoclient/echoclient.c
+#examples_echoclient_echoclient_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
+#examples_echoclient_echoclient_DEPENDENCIES = src/libwolfssl.la
+#examples_echoserver_echoserver_SOURCES = examples/echoserver/echoserver.c
+#examples_echoserver_echoserver_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
+#examples_echoserver_echoserver_DEPENDENCIES = src/libwolfssl.la
+#examples_server_server_SOURCES = examples/server/server.c
+#examples_server_server_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
+#examples_server_server_DEPENDENCIES = src/libwolfssl.la
+##examples_sctp_sctp_server_SOURCES = examples/sctp/sctp-server.c
+##examples_sctp_sctp_server_LDADD = $(LIB_STATIC_ADD)
+##examples_sctp_sctp_server_dtls_SOURCES = examples/sctp/sctp-server-dtls.c
+##examples_sctp_sctp_server_dtls_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
+##examples_sctp_sctp_server_dtls_DEPENDENCIES = src/libwolfssl.la
+##examples_sctp_sctp_client_SOURCES = examples/sctp/sctp-client.c
+##examples_sctp_sctp_client_LDADD = $(LIB_STATIC_ADD)
+##examples_sctp_sctp_client_dtls_SOURCES = examples/sctp/sctp-client-dtls.c
+##examples_sctp_sctp_client_dtls_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
+##examples_sctp_sctp_client_dtls_DEPENDENCIES = src/libwolfssl.la
+#testsuite_testsuite_test_SOURCES = \
+#			      wolfcrypt/test/test.c \
+#			      examples/client/client.c \
+#			      examples/echoclient/echoclient.c \
+#			      examples/echoserver/echoserver.c \
+#			      examples/server/server.c \
+#			      testsuite/testsuite.c
 
-testsuite_testsuite_test_CFLAGS = -DNO_MAIN_DRIVER $(AM_CFLAGS)
-testsuite_testsuite_test_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
-testsuite_testsuite_test_DEPENDENCIES = src/libwolfssl.la
-tests_unit_test_SOURCES = \
-                  tests/unit.c \
-                  tests/api.c \
-                  tests/suites.c \
-                  tests/hash.c \
-                  tests/srp.c \
-                  examples/client/client.c \
-                  examples/server/server.c
+#testsuite_testsuite_test_CFLAGS = -DNO_MAIN_DRIVER $(AM_CFLAGS)
+#testsuite_testsuite_test_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
+#testsuite_testsuite_test_DEPENDENCIES = src/libwolfssl.la
+#tests_unit_test_SOURCES = \
+#                  tests/unit.c \
+#                  tests/api.c \
+#                  tests/suites.c \
+#                  tests/hash.c \
+#                  tests/srp.c \
+#                  examples/client/client.c \
+#                  examples/server/server.c
 
-tests_unit_test_CFLAGS = -DNO_MAIN_DRIVER $(AM_CFLAGS)
-tests_unit_test_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
-tests_unit_test_DEPENDENCIES = src/libwolfssl.la
+#tests_unit_test_CFLAGS = -DNO_MAIN_DRIVER $(AM_CFLAGS)
+#tests_unit_test_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
+#tests_unit_test_DEPENDENCIES = src/libwolfssl.la
 #sslSniffer_sslSnifferTest_snifftest_SOURCES = sslSniffer/sslSnifferTest/snifftest.c
 #sslSniffer_sslSnifferTest_snifftest_LDADD = src/libwolfssl.la -lpcap $(LIB_STATIC_ADD)
 #sslSniffer_sslSnifferTest_snifftest_DEPENDENCIES = src/libwolfssl.la
@@ -6497,20 +6497,20 @@ release: rpm-sign
 
 auto-rpmbuild:
 	@auto-br-rpmbuild -ba rpm/spec
-#scripts/crl-revoked.log: scripts/resume.log
-#scripts/ocsp-stapling.log: tests/unit.log
-#scripts/ocsp-stapling.log: scripts/ocsp.log
-#scripts/ocsp-stapling-with-ca-as-responder.log: tests/unit.log
-#scripts/ocsp-stapling-with-ca-as-responder.log: scripts/ocsp.log
-#scripts/ocsp-stapling-with-ca-as-responder.log: scripts/ocsp-stapling.log
+##scripts/crl-revoked.log: scripts/resume.log
+##scripts/ocsp-stapling.log: tests/unit.log
+##scripts/ocsp-stapling.log: scripts/ocsp.log
+##scripts/ocsp-stapling-with-ca-as-responder.log: tests/unit.log
+##scripts/ocsp-stapling-with-ca-as-responder.log: scripts/ocsp.log
+##scripts/ocsp-stapling-with-ca-as-responder.log: scripts/ocsp-stapling.log
 
+###scripts/ocsp-stapling2.log: tests/unit.log
+###scripts/ocsp-stapling2.log: scripts/ocsp.log
+###scripts/ocsp-stapling2.log: scripts/ocsp-stapling.log
+###scripts/ocsp-stapling2.log: scripts/ocsp-stapling-with-ca-as-responder.log
 ##scripts/ocsp-stapling2.log: tests/unit.log
 ##scripts/ocsp-stapling2.log: scripts/ocsp.log
-##scripts/ocsp-stapling2.log: scripts/ocsp-stapling.log
-##scripts/ocsp-stapling2.log: scripts/ocsp-stapling-with-ca-as-responder.log
-#scripts/ocsp-stapling2.log: tests/unit.log
-#scripts/ocsp-stapling2.log: scripts/ocsp.log
-#scripts/pkcallbacks.log: scripts/resume.log
+##scripts/pkcallbacks.log: scripts/resume.log
 
 test: check
 tests/unit.log: testsuite/testsuite.log
