@@ -51,10 +51,10 @@ buildIOS()
 	export LDFLAGS="-arch ${ARCH} -isysroot ${CROSS_TOP}/SDKs/${CROSS_SDK}"
 
 	if [[ "${ARCH}" == *"arm64"* || "${ARCH}" == "arm64e" ]]; then
-		./configure --disable-shared --enable-static --host="arm-apple-darwin" --disable-examples --enable-ipv6 --enable-ecc --enable-aesgcm --enable-hkdf --enable-alpn --enable-sni --enable-oldtls  --enable-opensslextra --enable-ecccustcurves  --enable-lighty --enable-session-ticket --enable-debug
+		./configure --disable-shared --enable-static --host="arm-apple-darwin" --disable-examples --enable-ipv6 --enable-alpn --enable-sni --enable-oldtls --enable-opensslextra --enable-lighty --enable-session-ticket --enable-debug
 	else
 
-		./configure --disable-shared --enable-static --host="${ARCH}-apple-darwin" --disable-examples --enable-ipv6 --enable-ecc --enable-aesgcm --enable-hkdf --enable-alpn --enable-sni --enable-oldtls  --enable-opensslextra --enable-ecccustcurves  --enable-lighty --enable-session-ticket --enable-debug
+		./configure --disable-shared --enable-static --host="${ARCH}-apple-darwin" --disable-examples --enable-ipv6 --enable-alpn --enable-sni --enable-oldtls --enable-opensslextra --enable-lighty --enable-session-ticket --enable-debug
 
 	fi
 
