@@ -62,3 +62,15 @@ wolfssl/wolfssl-4.5.0/testsuite/*.o
 
 #examples
 wolfssl/wolfssl-4.5.0/examples
+
+wolfssl/wolfssl-4.5.0/aminclude.am
+wolfssl/wolfssl-4.5.0/config.log
+wolfssl/wolfssl-4.5.0/examples/benchmark/tls_bench
+wolfssl/wolfssl-4.5.0/examples/client/client
+wolfssl/wolfssl-4.5.0/examples/echoclient/echoclient
+wolfssl/wolfssl-4.5.0/examples/echoserver/echoserver
+wolfssl/wolfssl-4.5.0/examples/server/server
+wolfssl/wolfssl-4.5.0/tests/unit.test
+wolfssl/wolfssl-4.5.0/testsuite/testsuite.test
+wolfssl/wolfssl-4.5.0/wolfcrypt/benchmark/benchmark
+wolfssl/wolfssl-4.5.0/wolfcrypt/test/testwolfcrypt
