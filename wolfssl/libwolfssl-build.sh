@@ -46,15 +46,15 @@ buildIOS()
 	export CROSS_SDK="${PLATFORM}${IOS_SDK_VERSION}.sdk"
 	export BUILD_TOOLS="${DEVELOPER}"
 	export CC="${BUILD_TOOLS}/usr/bin/gcc"
-	export CFLAGS="-arch ${ARCH} -pipe -Os -gdwarf-2 -isysroot ${CROSS_TOP}/SDKs/${CROSS_SDK} -miphoneos-version-min=${IOS_MIN_SDK_VERSION} ${CC_BITCODE_FLAG} -DWOLFSSL_DEBUG_TLS"
+	export CFLAGS="-arch ${ARCH} -pipe -Os -gdwarf-2 -isysroot ${CROSS_TOP}/SDKs/${CROSS_SDK} -miphoneos-version-min=${IOS_MIN_SDK_VERSION} ${CC_BITCODE_FLAG}"
 
 	export LDFLAGS="-arch ${ARCH} -isysroot ${CROSS_TOP}/SDKs/${CROSS_SDK}"
 
 	if [[ "${ARCH}" == *"arm64"* || "${ARCH}" == "arm64e" ]]; then
-		./configure --disable-shared --enable-static --host="arm-apple-darwin" --disable-examples --enable-ipv6 --enable-alpn --enable-sni --enable-oldtls --enable-opensslextra --enable-lighty --enable-session-ticket --enable-debug
+		./configure --disable-shared --enable-static --host="arm-apple-darwin" --disable-examples --enable-ipv6 --enable-alpn --enable-sni --enable-oldtls --enable-opensslextra --enable-lighty --enable-session-ticket
 	else
 
-		./configure --disable-shared --enable-static --host="${ARCH}-apple-darwin" --disable-examples --enable-ipv6 --enable-alpn --enable-sni --enable-oldtls --enable-opensslextra --enable-lighty --enable-session-ticket --enable-debug
+		./configure --disable-shared --enable-static --host="${ARCH}-apple-darwin" --disable-examples --enable-ipv6 --enable-alpn --enable-sni --enable-oldtls --enable-opensslextra --enable-lighty --enable-session-ticket
 
 	fi
 
@@ -64,7 +64,7 @@ buildIOS()
     
     cp src/.libs/libwolfssl.a ../output/${ARCH}.a
     
-    #make clean
+    make clean
     
 	popd > /dev/null
 }
