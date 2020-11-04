@@ -15,9 +15,6 @@
 extern "C" {
 #endif
 
-#undef  WOLFSSL_DEBUG_TLS
-#define WOLFSSL_DEBUG_TLS
-
 #undef  WOLFSSL_TLS13
 #define WOLFSSL_TLS13
 
@@ -49,9 +46,6 @@ extern "C" {
 #undef  _POSIX_THREADS
 #define _POSIX_THREADS
 #endif
-
-#undef  DEBUG_WOLFSSL
-#define DEBUG_WOLFSSL
 
 #undef  TFM_TIMING_RESISTANT
 #define TFM_TIMING_RESISTANT
@@ -91,9 +85,6 @@ extern "C" {
 
 #undef  ECC_SHAMIR
 #define ECC_SHAMIR
-
-#undef  WOLFSSL_CUSTOM_CURVES
-#define WOLFSSL_CUSTOM_CURVES
 
 #undef  WC_RSA_PSS
 #define WC_RSA_PSS

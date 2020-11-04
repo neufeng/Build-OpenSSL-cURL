@@ -73,7 +73,13 @@ do
 		PLATFORM="iPhoneOS"
 	fi
 
-	echo "Building mbedtls for ${PLATFORM} ${SDKVERSION} ${ARCH}"
+	if [[ "${BITCODE}" == "nobitcode" ]]; then
+		CC_BITCODE_FLAG=""
+	else
+		CC_BITCODE_FLAG="-fembed-bitcode"
+	fi
+
+	echo "Building mbedtls for ${PLATFORM} ${SDKVERSION} ${ARCH} ${BITCODE}"
 
 	# echo "Patching Makefile..."
 	# sed -i.bak '4d' library/Makefile
@@ -84,10 +90,10 @@ do
 	export DEVROOT="${DEVELOPER}/Platforms/${PLATFORM}.platform/Developer"
 	export SDKROOT="${DEVROOT}/SDKs/${PLATFORM}${SDKVERSION}.sdk"
 	export BUILD_TOOLS="${DEVELOPER}"
-	export CC="${BUILD_TOOLS}/usr/bin/gcc -arch ${ARCH}"
+	export CC="${BUILD_TOOLS}/usr/bin/gcc"
 
 	export LDFLAGS="-arch ${ARCH} -pipe -no-cpp-precomp -isysroot ${SDKROOT}"
-	export CFLAGS="-arch ${ARCH} -pipe -no-cpp-precomp -isysroot ${SDKROOT} -miphoneos-version-min=${IOS_MIN_SDK_VERSION} -I${CURRENTPATH}/${MBEDTLS_VERSION}/include"
+	export CFLAGS="-arch ${ARCH} -pipe -no-cpp-precomp -isysroot ${SDKROOT} -miphoneos-version-min=${IOS_MIN_SDK_VERSION} -I${CURRENTPATH}/${MBEDTLS_VERSION}/include ${CC_BITCODE_FLAG}"
 
 	make
 
