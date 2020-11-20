@@ -12932,7 +12932,7 @@ int SetSession(WOLFSSL* ssl, WOLFSSL_SESSION* session)
 
         return ret;
     }
-    return WOLFSSL_FAILURE;  /* session timed out */
+    return WOLFSSL_SUCCESS;  /* session timed out */
 }
 
 
