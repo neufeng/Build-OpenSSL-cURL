@@ -188,6 +188,9 @@ buildIOS "armv7s" "bitcode"
 buildIOS "arm64" "bitcode"
 buildIOS "arm64e" "bitcode"
 
+echo "  Copying headers"
+cp /tmp/${CURL_VERSION}-iOS-arm64e-bitcode/include/curl/* include/curl/
+
 lipo \
     "/tmp/${CURL_VERSION}-iOS-armv7-bitcode/lib/libcurl.a" \
     "/tmp/${CURL_VERSION}-iOS-armv7s-bitcode/lib/libcurl.a" \
